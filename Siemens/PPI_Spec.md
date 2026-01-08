@@ -122,6 +122,31 @@ Since all messages must be acknowledged within a station delay, the PPI slave wi
 
 The message and retry timing requirements are shown below.
 
+```mermaid
+sequenceDiagram
+    participant Master
+    participant Slave
+
+    Note over Master,Slave: Normal Operation (Token Passing Cycle)
+
+    Master->>Slave: T_ID
+    Master->>Slave: TGAP
+    Master->>Slave: Tack
+    Master->>Slave: Tpoll
+    Master->>Slave: ... (multiple polls)
+    Master->>Slave: Tpoll
+    Master->>Slave: TGAP
+
+    Slave-->>Master: Ack
+    Slave-->>Master: ...
+    Slave-->>Master: Ack
+
+    Note over Master,Slave: Retry Scenario (if no response)
+
+    Master->>Slave: T_ID
+    Master->>Slave: Tretry
+    Slave-->>Master: Ack
+```
 
 
 
@@ -475,4 +500,70 @@ The construction of the parameter block is specified for each service request an
 **SERVICE_ID (UNSIGNED8)** Service Identification
 
 The service identifications are generally classified as services with acknowledgment or services without acknowledgment. For those services which are acknowledged, the request and the response have the same service identification. The services in each group can be distinguished by the ROSCTR parameter in the header. The following table lists the various service ID's.
+
+| Service | SERVICE ID |
+|---------|---------------|
+| Reading | 04H |
+| Writing | 05H |
+| | |
+| General Services|  |
+| Virtual Device Status | 00H |
+| | |
+| Application Associations Management | |
+|Setting Up Application Associations | F0H |
+
+Note: There is no PDU for the termination of the applications association; instead the corresponding transport connection is broken (disconnected).
+
+### 4.3 Data Block Definition Overview
+
+The format of the data block is specific to each service and is defined in the individual service descriptions.
+
+### 4.4 Simplified Representation of the Communication Sequence
+
+The following diagram shows the communication sequences and their representation in a simplified form that corresponds to the representations used in the description of each service. In general the master is the client and the slave is the server. Therefore, the request is issued by the master who is obliged to poll for the response.
+
+```mermaid
+sequenceDiagram
+    participant Master as Master<br>(Client)
+    participant Slave as Slave<br>(Server)
+
+    Note over Master,Slave: Actual Communication Request/Response Sequence Issued by the Master
+
+    Master->>Slave: SD2 (REQ)
+    Slave-->>Master: SC
+    Note right of Slave: Start a 10 second timer upon<br>receipt of the request. If the<br>timer expires before the poll<br>for the response is received,<br>terminate the transaction.
+    Master->>Slave: SD1 (Poll)
+    Slave-->>Master: SD2 (RSP)
+```
+
+#### Representation of a Request/Response Sequence Issued by the Master
+
+```mermaid
+sequenceDiagram
+    participant Master as Master<br>(Client)
+    participant Slave as Slave<br>(Server)
+
+    Master->>Slave: REQ
+    Slave-->>Master: RSP
+```
+
+### 4.5 Establish an AssociationThe
+
+Establish Association service is sent in order to establish the Protocol Data Unit (PDU) size and the number of credits. The S7-200 supports a credit of 1. The number of credits available is the same as the number of outstanding requests/responses possible.
+
+Once an association has been established, the remote system may send a keep awake message consisting of a SD1 poll that is acknowledged immediately with a SC. The S7-200 does not require the keep awake message, but it will accept it and respond appropriately.
+
+The following figures show the message sequence and format of the establish association request.
+
+```mermaid
+sequenceDiagram
+    participant PG as PG
+    participant AS200 as AS200
+
+    PG->>AS200: Establish_Association_REQ
+    AS200-->>PG: Establish_Association_RSP
+```
+
+The master requests a number of credits of the slave and also suggests a PDU size. The slave will respond with the number of credits available to the master and the maximum PDU size supported by the slave.
+
 
