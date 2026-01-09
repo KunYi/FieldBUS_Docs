@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1400 650"
+   version="1.1"
+   id="svg73"
+   sodipodi:docname="timing.svg"
+   inkscape:version="1.4.3 (1:1.4.3+202512261034+0d15f75042)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview73"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.8513572"
+     inkscape:cx="340.56096"
+     inkscape:cy="91.284381"
+     inkscape:window-width="1920"
+     inkscape:window-height="968"
+     inkscape:window-x="0"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg73" />
+  <!-- White background -->
+  <rect
+     width="100%"
+     height="100%"
+     fill="white"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="700"
+     y="35"
+     font-family="'Segoe UI', 'Helvetica Neue', sans-serif"
+     font-size="26"
+     font-weight="600"
+     text-anchor="middle"
+     fill="#000000"
+     id="text1">
+    Timing for PROFIBUS Compatibility
+  </text>
+  <!-- Define styles -->
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .lane-label { font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 18px; font-weight: 600; fill: #000000; }
+      .byte-block { fill: #E8E8E8; stroke: #000000; stroke-width: 2; }
+      .byte-text { font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 14px; fill: #000000; text-anchor: middle; font-weight: 600; }
+      .control-block { fill: #D0D0D0; stroke: #000000; stroke-width: 2; }
+      .control-text { font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 15px; fill: #000000; text-anchor: middle; font-weight: 600; }
+      .timing-label { font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 13px; fill: #000000; text-anchor: middle; font-weight: 600; }
+      .grid-line { stroke: #AAAAAA; stroke-width: 1; stroke-dasharray: 4,4; }
+      .arrow-line { stroke: #000000; stroke-width: 2; fill: none; }
+      .arrow-head { fill: #000000; }
+    </style>
+  </defs>
+  <!-- Scenario 1: Poll/Ack cycle -->
+  <text
+     x="84"
+     y="130"
+     class="lane-label"
+     id="text2">(Master)</text>
+  <text
+     x="84"
+     y="230"
+     class="lane-label"
+     id="text3">(Slave)</text>
+  <line
+     x1="196"
+     y1="73.599998"
+     x2="196"
+     y2="243.60001"
+     class="grid-line"
+     id="line3"
+     style="stroke:#000000;stroke-width:1.714;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="558.2135"
+     y1="70.956245"
+     x2="558.2135"
+     y2="240.95627"
+     class="grid-line"
+     id="line3-7"
+     style="stroke:#000000;stroke-width:1.714;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="618"
+     y1="90"
+     x2="618"
+     y2="260"
+     class="grid-line"
+     id="line9" />
+  <line
+     x1="688"
+     y1="90"
+     x2="688"
+     y2="260"
+     class="grid-line"
+     id="line10" />
+  <line
+     x1="758"
+     y1="90"
+     x2="758"
+     y2="260"
+     class="grid-line"
+     id="line11" />
+  <line
+     x1="868"
+     y1="90"
+     x2="868"
+     y2="260"
+     class="grid-line"
+     id="line12" />
+  <line
+     x1="938"
+     y1="90"
+     x2="938"
+     y2="260"
+     class="grid-line"
+     id="line13" />
+  <line
+     x1="1008"
+     y1="90"
+     x2="1008"
+     y2="260"
+     class="grid-line"
+     id="line14" />
+  <g
+     id="master-request"
+     inkscape:groupmode="layer">
+    <rect
+       x="236"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect17" />
+    <text
+       x="250"
+       y="131"
+       class="byte-text"
+       id="text17">R</text>
+    <rect
+       x="272"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect18" />
+    <text
+       x="286"
+       y="131"
+       class="byte-text"
+       id="text18">e</text>
+    <rect
+       x="308"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect19" />
+    <text
+       x="322"
+       y="131"
+       class="byte-text"
+       id="text19">q</text>
+    <rect
+       x="344"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect20" />
+    <text
+       x="358"
+       y="131"
+       class="byte-text"
+       id="text20">u</text>
+    <rect
+       x="380"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect21" />
+    <text
+       x="394"
+       y="131"
+       class="byte-text"
+       id="text21">e</text>
+    <rect
+       x="416"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect22" />
+    <text
+       x="430"
+       y="131"
+       class="byte-text"
+       id="text22">s</text>
+    <rect
+       x="452"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect23" />
+    <text
+       x="466"
+       y="131"
+       class="byte-text"
+       id="text23">t</text>
+  </g>
+  <g
+     id="master-polls"
+     transform="translate(76)">
+    <rect
+       x="612"
+       y="110"
+       width="70"
+       height="30"
+       class="control-block"
+       rx="2"
+       id="rect24" />
+    <text
+       x="647"
+       y="132"
+       class="control-text"
+       id="text24">Poll</text>
+    <text
+       x="737"
+       y="132"
+       font-family="'Segoe UI', 'Helvetica Neue', sans-serif"
+       font-size="18px"
+       text-anchor="middle"
+       fill="#000000"
+       id="text25"
+       style="stroke-width:5;stroke-dasharray:none"><tspan
+         style="font-size:26.6667px"
+         id="tspan73">..</tspan><tspan
+         style="font-size:26.6667px"
+         id="tspan75">.</tspan></text>
+    <rect
+       x="792"
+       y="110"
+       width="70"
+       height="30"
+       class="control-block"
+       rx="2"
+       id="rect25" />
+    <text
+       x="827"
+       y="132"
+       class="control-text"
+       id="text26">Poll</text>
+  </g>
+  <g
+     id="slave-ack"
+     transform="translate(76)">
+    <rect
+       x="482"
+       y="210"
+       width="60"
+       height="30"
+       class="control-block"
+       rx="2"
+       id="rect26" />
+    <text
+       x="512"
+       y="232"
+       class="control-text"
+       id="text27">Ack</text>
+  </g>
+  <g
+     id="slave-ack-7"
+     transform="translate(679.72815,316)">
+    <rect
+       x="482"
+       y="210"
+       width="60"
+       height="30"
+       class="control-block"
+       rx="2"
+       id="rect26-5"
+       style="fill:#d0d0d0;stroke:#000000;stroke-width:2" />
+    <text
+       x="512"
+       y="232"
+       class="control-text"
+       id="text27-3"
+       style="font-weight:600;font-size:15px;font-family:'Segoe UI', 'Helvetica Neue', sans-serif;text-anchor:middle;fill:#000000">Ack</text>
+  </g>
+  <g
+     id="slave-response"
+     transform="translate(76)">
+    <rect
+       x="932"
+       y="210"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect27" />
+    <text
+       x="946"
+       y="231"
+       class="byte-text"
+       id="text28">R</text>
+    <rect
+       x="968"
+       y="210"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect28" />
+    <text
+       x="982"
+       y="231"
+       class="byte-text"
+       id="text29">e</text>
+    <rect
+       x="1004"
+       y="210"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect29" />
+    <text
+       x="1018"
+       y="231"
+       class="byte-text"
+       id="text30">s</text>
+    <rect
+       x="1040"
+       y="210"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect30" />
+    <text
+       x="1054"
+       y="231"
+       class="byte-text"
+       id="text31">p</text>
+    <rect
+       x="1076"
+       y="210"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect31" />
+    <text
+       x="1090"
+       y="231"
+       class="byte-text"
+       id="text32">o</text>
+    <rect
+       x="1112"
+       y="210"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect32" />
+    <text
+       x="1126"
+       y="231"
+       class="byte-text"
+       id="text33">n</text>
+    <rect
+       x="1148"
+       y="210"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect33" />
+    <text
+       x="1162"
+       y="231"
+       class="byte-text"
+       id="text34">e</text>
+  </g>
+  <line
+     x1="495.02521"
+     y1="89.168167"
+     x2="535.58093"
+     y2="89.168167"
+     class="arrow-line"
+     id="line34" />
+  <polygon
+     points="118,70 123,67 123,73 "
+     class="arrow-head"
+     id="polygon34"
+     transform="matrix(2.8,0,0,2.6666667,-94.1,-112.66667)" />
+  <polygon
+     points="123,67 123,73 118,70 "
+     class="arrow-head"
+     id="polygon34-2"
+     transform="matrix(2.8,0,0,2.6666667,86.073583,-112.66667)"
+     style="fill:#000000" />
+  <polygon
+     points="118,70 123,67 123,73 "
+     class="arrow-head"
+     id="polygon34-2-0"
+     transform="matrix(2.8,0,0,2.6666667,227.7,-94.291669)"
+     style="fill:#000000" />
+  <polygon
+     points="157,73 162,70 157,67 "
+     class="arrow-head"
+     id="polygon35"
+     transform="matrix(2.8,0,0,2.6666667,-257.6,-112.66667)" />
+  <polygon
+     points="162,70 157,67 157,73 "
+     class="arrow-head"
+     id="polygon35-2"
+     transform="matrix(2.8,0,0,2.6666667,-47.062396,-112.66667)"
+     style="fill:#000000" />
+  <polygon
+     points="157,67 157,73 162,70 "
+     class="arrow-head"
+     id="polygon35-2-9"
+     transform="matrix(2.8,0,0,2.6666667,26.088196,-112.66667)"
+     style="fill:#000000" />
+  <text
+     x="216"
+     y="61.477051"
+     class="timing-label"
+     id="text35">TID1</text>
+  <line
+     x1="407.66882"
+     y1="73.599998"
+     x2="407.66882"
+     y2="103.43016"
+     class="grid-line"
+     id="line5"
+     style="stroke:#000000;stroke-width:1.71405;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="236.71158"
+     y1="73.599998"
+     x2="236.71158"
+     y2="103.43015"
+     class="grid-line"
+     id="line5-9"
+     style="stroke:#000000;stroke-width:1.71405;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="480.3728"
+     y1="73.599998"
+     x2="480.3728"
+     y2="103.43016"
+     class="grid-line"
+     id="line5-5"
+     style="stroke:#000000;stroke-width:1.71405;stroke-dasharray:none;stroke-opacity:1" />
+  <line
+     x1="415.89175"
+     y1="73.599998"
+     x2="415.89175"
+     y2="103.43016"
+     class="grid-line"
+     id="line5-7"
+     style="stroke:#000000;stroke-width:1.71405;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     x="411.89932"
+     y="61.648438"
+     class="timing-label"
+     font-size="12px"
+     id="text37">TGAP</text>
+  <text
+     x="523"
+     y="78"
+     class="timing-label"
+     id="text39">Tack</text>
+  <line
+     x1="618"
+     y1="70"
+     x2="688"
+     y2="70"
+     class="arrow-line"
+     id="line39" />
+  <polygon
+     points="540,70 545,67 545,73 "
+     class="arrow-head"
+     id="polygon40"
+     transform="translate(76)" />
+  <polygon
+     points="614,70 609,67 609,73 "
+     class="arrow-head"
+     id="polygon41"
+     transform="translate(76)" />
+  <text
+     x="653"
+     y="62"
+     class="timing-label"
+     id="text41">Tpoll</text>
+  <g
+     id="g73"
+     transform="translate(76,-10)">
+    <line
+       x1="862"
+       y1="78"
+       x2="932"
+       y2="78"
+       class="arrow-line"
+       id="line43" />
+    <polygon
+       points="865,277 865,283 860,280 "
+       class="arrow-head"
+       id="polygon44"
+       transform="translate(0,-202)" />
+    <polygon
+       points="929,277 929,283 934,280 "
+       class="arrow-head"
+       id="polygon45"
+       transform="translate(0,-202)" />
+    <text
+       x="897"
+       y="70"
+       class="timing-label"
+       id="text45">Trsp</text>
+  </g>
+  <g
+     id="Tgap2"
+     inkscape:groupmode="layer">
+    <line
+       x1="1180.049"
+       y1="90"
+       x2="1180.049"
+       y2="260"
+       class="grid-line"
+       id="line15" />
+    <line
+       x1="1188.049"
+       y1="90"
+       x2="1188.049"
+       y2="260"
+       class="grid-line"
+       id="line16" />
+    <line
+       x1="1180"
+       y1="280"
+       x2="1188"
+       y2="280"
+       class="arrow-line"
+       id="line45" />
+    <polygon
+       points="1113,283 1111,280 1113,277 "
+       class="arrow-head"
+       id="polygon46"
+       transform="translate(68)" />
+    <polygon
+       points="1119,283 1121,280 1119,277 "
+       class="arrow-head"
+       id="polygon47"
+       transform="translate(68)" />
+    <text
+       x="1184"
+       y="298"
+       class="timing-label"
+       font-size="12px"
+       id="text47">TGAP</text>
+  </g>
+  <!-- Scenario 2: Retry cycle -->
+  <text
+     x="84"
+     y="440"
+     class="lane-label"
+     id="text48">(Master)</text>
+  <text
+     x="84"
+     y="540"
+     class="lane-label"
+     id="text49">(Slave)</text>
+  <line
+     x1="196"
+     y1="400"
+     x2="196"
+     y2="570"
+     class="grid-line"
+     id="line49" />
+  <line
+     x1="236"
+     y1="400"
+     x2="236"
+     y2="570"
+     class="grid-line"
+     id="line50" />
+  <line
+     x1="480"
+     y1="400"
+     x2="480"
+     y2="570"
+     class="grid-line"
+     id="line53" />
+  <line
+     x1="876"
+     y1="400"
+     x2="876"
+     y2="570"
+     class="grid-line"
+     id="line54" />
+  <g
+     id="master-first-request"
+     transform="translate(76,310)">
+    <rect
+       x="160"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect57" />
+    <text
+       x="174"
+       y="131"
+       class="byte-text"
+       id="text57">R</text>
+    <rect
+       x="196"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect58" />
+    <text
+       x="210"
+       y="131"
+       class="byte-text"
+       id="text58">e</text>
+    <rect
+       x="232"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect59" />
+    <text
+       x="246"
+       y="131"
+       class="byte-text"
+       id="text59">q</text>
+    <rect
+       x="268"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect60" />
+    <text
+       x="282"
+       y="131"
+       class="byte-text"
+       id="text60">u</text>
+    <rect
+       x="304"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect61" />
+    <text
+       x="318"
+       y="131"
+       class="byte-text"
+       id="text61">e</text>
+    <rect
+       x="340"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect62" />
+    <text
+       x="354"
+       y="131"
+       class="byte-text"
+       id="text62">s</text>
+    <rect
+       x="376"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect63" />
+    <text
+       x="390"
+       y="131"
+       class="byte-text"
+       id="text63">t</text>
+  </g>
+  <g
+     id="master-retry-request"
+     transform="translate(76,310)">
+    <rect
+       x="800"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect64" />
+    <text
+       x="814"
+       y="131"
+       class="byte-text"
+       id="text64">R</text>
+    <rect
+       x="836"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect65" />
+    <text
+       x="850"
+       y="131"
+       class="byte-text"
+       id="text65">e</text>
+    <rect
+       x="872"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect66" />
+    <text
+       x="886"
+       y="131"
+       class="byte-text"
+       id="text66">q</text>
+    <rect
+       x="908"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect67" />
+    <text
+       x="922"
+       y="131"
+       class="byte-text"
+       id="text67">u</text>
+    <rect
+       x="944"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect68" />
+    <text
+       x="958"
+       y="131"
+       class="byte-text"
+       id="text68">e</text>
+    <rect
+       x="980"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect69" />
+    <text
+       x="994"
+       y="131"
+       class="byte-text"
+       id="text69">s</text>
+    <rect
+       x="1016"
+       y="110"
+       width="28"
+       height="30"
+       class="byte-block"
+       id="rect70" />
+    <text
+       x="1030"
+       y="131"
+       class="byte-text"
+       id="text70">t</text>
+  </g>
+  <line
+     x1="196"
+     y1="380"
+     x2="236"
+     y2="380"
+     class="arrow-line"
+     id="line70" />
+  <polygon
+     points="118,70 123,67 123,73 "
+     class="arrow-head"
+     id="polygon70"
+     transform="translate(76,310)" />
+  <polygon
+     points="162,70 157,67 157,73 "
+     class="arrow-head"
+     id="polygon71"
+     transform="translate(76,310)" />
+  <text
+     x="216"
+     y="372"
+     class="timing-label"
+     id="text71">TID1</text>
+  <line
+     x1="484.98489"
+     y1="380"
+     x2="876"
+     y2="380"
+     class="arrow-line"
+     id="line71" />
+  <polygon
+     points="410,70 415,67 415,73 "
+     class="arrow-head"
+     id="polygon72"
+     transform="translate(70,310)" />
+  <polygon
+     points="802,70 797,67 797,73 "
+     class="arrow-head"
+     id="polygon73"
+     transform="translate(76,310)" />
+  <text
+     x="682"
+     y="372"
+     class="timing-label"
+     id="text73">Tretry</text>
+</svg>

@@ -122,7 +122,7 @@ Since all messages must be acknowledged within a station delay, the PPI slave wi
 
 The message and retry timing requirements are shown below.
 
-![Profibus Timing Diagram](pics/profibus_timing.svg)
+![Profibus Timing Diagram](pics/Profibus_Timing.png)
 
 The following communication parameters shall be used by all PPI devices as default parameters.
 
