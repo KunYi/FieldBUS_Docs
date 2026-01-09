@@ -122,33 +122,7 @@ Since all messages must be acknowledged within a station delay, the PPI slave wi
 
 The message and retry timing requirements are shown below.
 
-```mermaid
-sequenceDiagram
-    participant Master
-    participant Slave
-
-    Note over Master,Slave: Normal Operation (Token Passing Cycle)
-
-    Master->>Slave: T_ID
-    Master->>Slave: TGAP
-    Master->>Slave: Tack
-    Master->>Slave: Tpoll
-    Master->>Slave: ... (multiple polls)
-    Master->>Slave: Tpoll
-    Master->>Slave: TGAP
-
-    Slave-->>Master: Ack
-    Slave-->>Master: ...
-    Slave-->>Master: Ack
-
-    Note over Master,Slave: Retry Scenario (if no response)
-
-    Master->>Slave: T_ID
-    Master->>Slave: Tretry
-    Slave-->>Master: Ack
-```
-
-
+![Profibus Timing Diagram](pics/profibus_timing.svg)
 
 The following communication parameters shall be used by all PPI devices as default parameters.
 
